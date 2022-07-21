@@ -1,0 +1,26 @@
+{
+  "name": "clone-mercadolibre",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "repository": {},
+  "license": "MIT",
+  "homepage": "",
+  "engines": {
+    "node": ">=12.18.3",
+    "npm": ">=6.14.6"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "build:client": "cd client && npm run build",
+    "build:api": "cd api && npm run build",
+    "clean": "concurrently \"cd client && rimraf node_modules build\" \"cd api && rimraf node_modules build\"",
+    "install:app": "concurrently \"cd client && npm install\" \"cd api && npm install\"",
+    "install:api": "cd api && npm install",
+    "install:client": "cd client && npm install",
+    "start": "concurrently \"cd client && npm run start\" \"cd api && npm run start\"",
+    "start:prod": "cd api && npm run start:prod"
+  }
+}
