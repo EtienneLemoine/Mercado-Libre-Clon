@@ -32,7 +32,7 @@ server.get('/', (req, res) => {
             });
             res.status(200).json({ status: 'OK', results: arrResponse });
         })
-        .catch(err => res.status(500).json({ message: 'unknown error', error: err }));
+        .catch(err => res.status(500).json({ message: 'Error desconocido', error: err }));
 });
 
 server.get('/categorys', async (req, res) => {
