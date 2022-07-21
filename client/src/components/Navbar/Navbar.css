@@ -1,0 +1,18 @@
+.navbar-principal {
+    background-color: #FFF159;
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    height: 6rem;
+    padding: 0 20px;
+}
+
+.navbar__brand {
+    position: absolute;
+    left: 20px;
+    display: none;
+}
+
+.img-brand {
+    width: 130px;
+}
