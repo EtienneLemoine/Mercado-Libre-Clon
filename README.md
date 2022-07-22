@@ -43,10 +43,4 @@ ACCESS_TOKEN=APP_USR-XXXX-XXXXX-XXXXXXXXXX #MERCADOPAGO CREDENTIALS ACCES
 npm install
 npm start
 ```
-### Para produccion
 
-```sh
-npm install
-npm run heroku-postbuild
-npm run start:prod
-```
